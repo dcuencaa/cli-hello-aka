@@ -1,0 +1,25 @@
+#!/usr/bin/env php
+<?php
+require __DIR__.'/../vendor/autoload.php';
+
+use Symfony\Component\Console\Application;
+use Symfony\Component\Console\Input\InputArgument;
+use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Output\OutputInterface;
+
+$application = new Application('akamai php-test', '1.0.0');
+
+$application->register('hello')
+    ->setDescription("An example sub-command")
+	->setCode(function(InputInterface $input, OutputInterface $output) {
+        $output->writeln('<info>Hello ' . ($input->getArgument('whom') ?? 'World') . '</info>');
+	})
+->addArgument(
+    'whom',
+    InputArgument::OPTIONAL,
+    'To whom would you like the greeting to be addressed?'
+);
+
+$application->setDefaultCommand('list');
+
+$application->run();
