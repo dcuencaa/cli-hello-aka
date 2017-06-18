@@ -7,7 +7,7 @@ This repo is an _example_ command for Akamai CLI written in PHP.
 Installation is done via `akamai get`:
 
 ```
-$ akamai get akamai-open/akamai-cli-example-php
+$ akamai get example-php
 ```
 
 Running this will run the system `composer install` automatically. You can also
@@ -19,5 +19,5 @@ add `composer.phar` to the repository root, and it will be used in case a system
 To update to the latest version:
 
 ```
-$ akamai update php-test
+$ akamai update example-php 
 ```
