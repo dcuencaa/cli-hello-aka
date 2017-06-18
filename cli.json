@@ -1,12 +1,12 @@
 {
   "requirements": {
-    "php": "5.5"
+    "node": "7.0.0"
   },
   "commands": [
     {
-      "name": "example-php",
+      "name": "example-node",
       "version": "0.1.0",
-      "description": "An example Akamai CLI command written in PHP"
+      "description": "An example Akamai CLI command written in Node"
     }
   ]
 }

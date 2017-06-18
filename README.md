@@ -1,23 +1,21 @@
-# Akamai CLI: PHP Example Command
+# Akamai CLI: Node.js Example Command
 
-This repo is an _example_ command for Akamai CLI written in PHP.
+This repo is an _example_ command for Akamai CLI written in Node.js.
 
 ## Install
 
 Installation is done via `akamai get`:
 
 ```
-$ akamai get example-php
+$ akamai get example-node
 ```
 
-Running this will run the system `composer install` automatically. You can also
-add `composer.phar` to the repository root, and it will be used in case a system-level
-`composer` is not found.
+Running this will run the system `npm install` automatically. 
 
 ## Updating
 
 To update to the latest version:
 
 ```
-$ akamai update example-php 
+$ akamai update example-node
 ```
