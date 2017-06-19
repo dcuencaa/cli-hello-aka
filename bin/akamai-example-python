@@ -43,12 +43,12 @@ def main():
         parser.print_help()
         
     elif opts.command == "hello":
-        print "Hello %s" % opts.name
+        print ("Hello %s" % opts.name)
 
     else:
         # argparse will error on unexpected commands, but
         # in case we mistype one of the elif statements...
-        raise ValueError("Unhandled command %s" % opts.command)
+        parser.print_help(sys.stderr)
 
 
 if __name__ == '__main__':
