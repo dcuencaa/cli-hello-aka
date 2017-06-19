@@ -1,12 +1,12 @@
 {
   "requirements": {
-    "node": "7.0.0"
+    "python": "2.7.6"
   },
   "commands": [
     {
-      "name": "example-node",
+      "name": "example-python",
       "version": "0.1.0",
-      "description": "An example Akamai CLI command written in Node"
+      "description": "An example Akamai CLI command written in Python"
     }
   ]
 }
