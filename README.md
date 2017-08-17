@@ -4,10 +4,10 @@ This repo is an _example_ command for Akamai CLI written in Python.
 
 ## Install
 
-Installation is done via `akamai get`:
+Installation is done via `akamai install`:
 
 ```
-$ akamai get example-python
+$ akamai install example-python
 ```
 
 Running this will run the system `python setup.py` automatically. 
