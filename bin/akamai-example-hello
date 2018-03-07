@@ -46,7 +46,7 @@ def main():
     elif opts.command == "hallo":
         print ("Greetings %s" % opts.name1)
         
-    elif opts.command == "goodbye":
+    elif opts.command == "tschuss":
         print ("Aufwiedersehen %s" % opts.name1)
         
     else:
