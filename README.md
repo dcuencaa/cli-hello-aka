@@ -17,5 +17,5 @@ Running this will run the system `python setup.py` automatically.
 To update to the latest version:
 
 ```
-$ akamai update example-python
+$ akamai update example-hello
 ```
