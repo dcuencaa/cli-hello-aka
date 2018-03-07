@@ -33,7 +33,7 @@ def main():
     create_parser = subparsers.add_parser("list", help="Subcommands")
     create_parser = subparsers.add_parser("hello", help="Say Hi! to Akamai")
     create_parser = subparsers.add_parser("goodbye", help="Say Sayonara! to Akamai")
-    create_parser.add_argument("name", nargs='?', default='World')
+    create_parser.add_argument("name1", nargs='?', default='World')
     create_parser.add_argument("name2", nargs='?', default='Mein Freund')
     
     opts = parser.parse_args()
@@ -45,7 +45,7 @@ def main():
         parser.print_help()
         
     elif opts.command == "hello":
-        print ("Hello %s" % opts.name)
+        print ("Hello %s" % opts.name1)
 
     elif opts.command == "goodbye":
         print ("Aufwiedersehen %s" % opts.name2)
