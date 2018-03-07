@@ -31,8 +31,8 @@ def main():
 
     create_parser = subparsers.add_parser("help", help="Show available help")
     create_parser = subparsers.add_parser("list", help="Subcommands")
-    create_parser = subparsers.add_parser("hello", help="Say Hi! to Akamai")
-    create_parser = subparsers.add_parser("goodbye", help="Say Sayonara! to Akamai")
+    create_parser = subparsers.add_parser("hallo", help="Say Hola! to Akamai")
+    create_parser = subparsers.add_parser("tschuss", help="Say Sayonara! to Akamai")
     create_parser.add_argument("name1", nargs='?', default='Mein Freund')
     
     opts = parser.parse_args()
@@ -43,12 +43,12 @@ def main():
     elif opts.command == "list":
         parser.print_help()
         
-    elif opts.command == "hello":
-        print ("Hello %s" % opts.name1)
-
+    elif opts.command == "hallo":
+        print ("Greetings %s" % opts.name1)
+        
     elif opts.command == "goodbye":
         print ("Aufwiedersehen %s" % opts.name1)
-
+        
     else:
         # argparse will error on unexpected commands, but
         # in case we mistype one of the elif statements...
